@@ -22,7 +22,7 @@ This is an example of setting up the Circle CI Integration with Monaca Remote Bu
     echo '{"project_id":"5f4df1fee78885832cb5e623"}' > .monaca/local_properties.json
     ```
 
-  - add `.monaca/local_properties.json` to `.gitignores` (and [Monaca Ignore](https://docs.monaca.io/en/products_guide/monaca_localkit/overview/#upload-download-control))
+  - remove `.monaca/local_properties.json` from `.gitignores` (and [Monaca Ignore](https://docs.monaca.io/en/products_guide/monaca_localkit/overview/#upload-download-control))
 
     ```
     /.monaca/*
