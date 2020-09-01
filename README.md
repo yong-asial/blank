@@ -1,5 +1,9 @@
 # Preparation with Monaca Cloud IDE:
 
+This is an example of setting up the Circle CI Integration with Monaca Remote Build.
+
+> PLEASE REPLACE THE VALUE OF `project_id` IN `.monaca/local_properties.json` AND SET UP THE ENVIRONMENT VARIABLE IN YOUR CIRCLE CI CONFIGURATION
+
 - Fork this repo to your Github account
 
 - [Import Project from Github](https://docs.monaca.io/en/products_guide/monaca_ide/version_control/github_integration/#importing-a-project-from-github-repository-into-monaca) - Go to Monaca Dashboard -> Import -> Import From Linked Github Account -> and choose your repo
@@ -12,13 +16,13 @@
     npm i monaca -D
     ```
 
-  - generate `.monaca/local_properties.json` or replace `project_id` with your Cloud IDE’s `project_id`
+  - generate `.monaca/local_properties.json` or replace `project_id` with your Cloud IDE’s `project_id`. You can find the value of `project_id` in your address bar.
 
     ```
     echo '{"project_id":"5f4df1fee78885832cb5e623"}' > .monaca/local_properties.json
     ```
 
-  - add `.monaca/local_properties.json` to `.gitignores`
+  - add `.monaca/local_properties.json` to `.gitignores` (and [Monaca Ignore](https://docs.monaca.io/en/products_guide/monaca_localkit/overview/#upload-download-control))
 
     ```
     /.monaca/*
